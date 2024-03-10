@@ -4,12 +4,11 @@
 Thai syllable segmentation using Conditional Random Fields
 """
 
-from setuptools import setup
+from setuptools import setup, find_namespace_packages
 
 setup(
     name="ssg",
-    packages=["ssg"],
-    package_dir={"ssg": "ssg"},
+    packages=find_namespace_packages(),
     package_data={"ssg": ["artifacts/*"]},
     scripts=["scripts/ssg-cli"],
     include_package_data=True,
