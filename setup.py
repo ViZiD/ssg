@@ -10,10 +10,10 @@ setup(
     name="ssg",
     packages=["ssg"],
     package_dir={"ssg": "ssg"},
-    package_data={"ssg": ["artifacts/*"]},
-    scripts=["scripts/ssg-cli"],
     include_package_data=True,
-    version="0.0.7",
+    package_data={"ssg": ["artifacts/crf3_mix.crfsuite2"]},
+    scripts=["scripts/ssg-cli"],
+    version="0.0.8",
     install_requires=[
         'fire>=0.1.3',
         'python-crfsuite>=0.9.6',
@@ -35,3 +35,4 @@ setup(
         "Topic :: Text Processing :: Linguistic"
     ],
 )
+
