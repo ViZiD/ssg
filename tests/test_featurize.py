@@ -4,7 +4,7 @@ from ssg import Featurizer
 
 class TestFeaturize(unittest.TestCase):
     def setUp(self):
-        self.F = Featurizer(N=3)
+        self.F = Featurizer(N=3, delimiter='~')
         self.true_result = {'X': [
             ['-1|#', '0|a', '-2|#', '1|b', '-3|#', '2|c', '-4|#', '3|d', '-4|###', '-3|###', '-2|##a', '-1|#ab', '0|abc', '1|bcd'], 
             ['-1|a', '0|b', '-2|#', '1|c', '-3|#', '2|d', '-4|#', '3|e', '-4|###', '-3|##a', '-2|#ab', '-1|abc', '0|bcd', '1|cde'], 
